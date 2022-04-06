@@ -37,8 +37,27 @@
 
     /* Module Resolution Options */
     "moduleResolution": "node",               /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
-    // "baseUrl": "./",                       /* Base directory to resolve non-absolute module names. */
-    // "paths": {},                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+    "baseUrl": ".",                       /* Base directory to resolve non-absolute module names. */
+    "paths": {    
+      "@assets/*": ["./src/assets/*"],
+      "@common": ["./src/common/index"],
+      "@animated": ["./src/common/animated/index"],
+      "@config/*": ["./src/config/*"],
+      "@features/*": ["./src/features/*"],
+      "@components": ["./src/library/components/index"],
+      "@modals": ["./src/library/modals/index"],
+      "@utils": ["./src/library/utils/index"],
+      "@library/*": ["./src/library/*"],
+      "@networking": ["./src/library/networking/index"],
+      "@networking/*": ["./src/library/networking/*"],
+      "@model/*": ["./src/model/*"],
+      "@navigation/*": ["./src/navigation/*"],
+      "@store/*": ["./src/store/*"],
+      "@theme": ["./src/themes/index"],
+      "@theme/*": ["./src/themes/*"],
+      "@transition": ["./src/transition/index"],
+      "@app_redux/*": ["./src/store/app_redux/*"]
+    },                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
     // "types": [],                           /* Type declaration files to be included in compilation. */
